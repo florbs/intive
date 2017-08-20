@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Intive Test">
+
+    <test name="intiveTest">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="http://www.google.com/" />
+        <classes>
+            <class name="com.intive.IntiveTest">
+                <methods>
+                    <include name="searchTest" />
+                        <parameter name="urlText" value="Seleniumhq" />
+                        <parameter name="expectedUrl" value="http://www.seleniumhq.org/" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
